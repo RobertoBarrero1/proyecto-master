@@ -49,7 +49,8 @@ header .nav{
      color: white;
      text-decoration: none;   /* quita el subrayado */
      border-radius: 8px;
-     font-family:sans-serif
+     font-family:sans-serif;
+     text-align: center;
     
 }
 
@@ -62,8 +63,28 @@ header .nav{
 .contenedorPrincipal{
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 20px;
+    padding: 30px;
+}
+
+.subcontendor{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    transition: transform 0.4s ease;
+    display: grid;
+    justify-content: center;
+}
+
+.subcontendor:hover{
+    transform: scale(1.15);
+}
+
+.subcontendor img{
+    width: 200px;
+    height: 200px;
 }
 
 
